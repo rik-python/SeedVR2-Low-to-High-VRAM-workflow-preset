@@ -1,0 +1,49 @@
+SeedVR2 VRAM-Optimized Upscaling Workflow (ComfyUI)
+
+This workflow is designed to give you the best possible SeedVR2 video upscaling settings based on your GPU’s VRAM.
+Most tutorials only show default settings, but SeedVR2 behaves very differently on low-, mid-, high-, and ultra-high VRAM GPUs.
+
+This repo includes fully tested presets for:
+
+◼ Low VRAM (6–12GB)
+
+Optimized FP8 model, small batches, and safe tiling settings for stable 720p → 1080p or 1080p → 4K upscales.
+
+◼ Mid VRAM (12–16GB)
+
+Balanced FP8 workflow with higher batch sizes and 768 tiling for clean 1080p → 4K results.
+
+◼ High VRAM (16–32GB)
+
+Full-precision 7B model with increased batch size and 1024 tiling for fast, high-quality upscaling.
+
+◼ Ultra-High VRAM (32GB+)
+
+Maximum-quality 7B Sharp workflow, full-frame processing, minimal overlap, and no tiling required.
+
+Features
+
+Fully tested VRAM-tier presets
+
+Batch size, overlap, prepend, and tiling tuned for each GPU range
+
+FP8 and 7B model support
+
+Stable motion and minimal tile artifacts
+
+Designed for ComfyUI and long video sequences
+
+How to Use
+
+Load the workflow JSON into ComfyUI.
+
+Select the preset that matches your GPU VRAM.
+
+Drop in your video frames or image sequence.
+
+Adjust output resolution and render.
+
+Credits
+
+SeedVR2 model creators and the ComfyUI community.
+This workflow only optimizes settings for different VRAM ranges based on real-world testing.
